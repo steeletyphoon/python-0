@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import colors as c
+import random
+
+print(c.clear)
+print(c.red + '''
+Welcome to the magic Eightball
+Ask your question below.
+'''
+)
+
+answers = [
+    c.yellow + 'Yes.' + c.reset,
+    c.cyan + 'No.' + c.reset,
+    c.red + 'Maybe.' +c.reset,
+    c.orange + 'Ask again later.' + c.reset,
+    c.violet + 'Without a doubt.' + c.reset,
+    c.magenta + 'Reply hazy, try again.' + c.reset,
+    c.blue + 'My sources say no.' + c.reset,
+    c.base01 + 'Dont count on it.' + c.reset,
+    c.cyan + 'Probably' + c.reset,
+    c.orange + 'It is certain' + c.reset,
+    c.red + 'Better not tell you now' + c.reset
+]
+
+while True:
+    question = input('> ')
+    if 'goodbye' in question:
+        exit()
+    answer = random.choice(answers)
+    print(answer)

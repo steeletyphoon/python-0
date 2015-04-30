@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+import colors as c
+print(c.green + 'meet your maker' + c.cyan + 'because you will' + c.blue + 'bow down in' + c.orange + 'fear' + c.magenta + 'at the overwhelming' + c.red + 'world around you' + c.reset +'and I will triumph')

@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+import colors as c
+import random
+
+print(c.clear)
+print(c.blue + '''
+Welcome to my fortune telling masterpiece, be amazed.
+Ask me a question.
+'''
+)
+
+answers = [
+    c.red + 'Yes.' + c.reset,
+    c.base01 + 'No.' + c.reset,
+    c.orange + 'Maybe.' + c.reset,
+    c.violet + 'SHUT UP.' + c.reset,
+    c.base02 + 'Why should I care.' + c.reset,
+    c.magenta + 'You ask me for wisdom all day and I get nothing what do you have to say for yourself?' + c.reset,
+    c.blue + 'Were you abused, is this the stem of your constant need for attention, go away.' +  c.reset,
+    c.violet + 'Why would you ask me that.' + c.reset,
+    c.red + 'I just want to be left alone and eat my meal that I bought when your idiot face came over and started to bother me.' +  c.reset,
+    c.violet + 'What do I look like, a program that is a magic 8 ball?' +  c.reset,
+    c.orange + 'Go away please.' + c.reset,
+    c.yellow + 'Never' + c.reset,
+    c.magenta + 'Instead of talking to me you could have actually tried to have a life.' +  c.reset,
+    c.yellow + 'Absoloutley.' + c.reset,
+    c.red + 'Of course.' + c.reset,
+    c.blue + 'Why not.' +  c.reset,
+    c.cyan + 'Are you kidding me, no way!' + c.reset,
+    c.cyan + 'Your mouth just keeps moving, it never stops.' + c.reset,
+    c.orange + 'You are are a pathetic excuse for a human being.' + c.reset,
+    c.blue + 'You should know the answer to that.' + c.reset,
+    c.red + 'Ask again later.' + c.reset
+
+]
+while True:
+    question = input('> ')
+    if 'goodbye' in question:
+        exit()
+    elif 'will I' in question:
+        print('You will never.')
+    elif 'love' in question:
+        print('No everyone hates you, you are worthless')
+    else:
+        answer = random.choice(answers)
+        print(answer)
+
+

@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import colors as c
+
+print(c.blue + 'Hello there what is your name buddy oh chap oh roo?')
+name = input('> ')
+print(c.red + 'Well nice to meet you fat asian hitler ' + name)
+print(c.cyan + 'sorry about your family disowning you when you did not get into art school')
+print(c.yellow + 'do you wet the bed every day all day senor pisspot?')
+name = input('> ')
+print(c.green + 'sorry i stopped listening to your boring life, stop talking to me and go away')
+print(c.magenta + 'do you have any food? i am hungry')
+name = input('> ')
+print(c.violet + 'never mind i ate your fingers when they touched the keyboard, dont worry only little pieces')
+print(c.base01 + 'calm down you little girl')
+
